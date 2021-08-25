@@ -1,0 +1,9 @@
+<!-- form to create a post -->
+<div class="container p-5">
+  <h1>Create a post</h1>
+  <%= simple_form_for([@user, @post]) do |form| %>
+    <%= form.input :content %>
+    <%= form.input :image %>
+    <%= form.submit class:"btn btn-primary" %>
+  <% end %>
+</div>
